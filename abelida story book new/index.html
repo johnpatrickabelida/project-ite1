@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Storybook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MY STORYBOOK</h1>
+        <p>Discover and Read Amazing Stories</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#stories">Stories</a>
+        <a href="#about">About</a>
+        <button id="themeBtn" type="button">Dark Mode</button>
+    </nav>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home">
+            <h2>Welcome to My Storybook</h2>
+            <p>Choose a story and enjoy reading!</p>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search stories..."
+            >
+        </section>
+
+        <!-- STORIES SECTION -->
+        <section id="stories">
+            <h2>All Stories</h2>
+            <p>Choose one of our 30 short stories below.</p>
+
+            <div id="bookList" class="book-list"></div>
+        </section>
+
+        
+       <section id="reader" hidden>
+    <h2 id="storyTitle"></h2>
+    <p id="storyGenre"></p>
+
+    <!-- Story Image -->
+    <img id="storyImage" src="" alt="Story Cover">
+
+    <hr>
+
+    <h3>Chapter 1</h3>
+    <p id="storyContent"></p>
+
+    <button id="backBtn" type="button">
+        Back to Stories
+    </button>
+</section>
+
+        
+
+
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Us</h2>
+
+            <p>
+                My Storybook is a simple website for reading
+                30 different short stories. Explore different
+                genres such as adventure, fantasy, mystery,
+                friendship, and comedy.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Storybook | ITE 1 Project</p>
+    </footer>
+
+    <!-- JavaScript: place this at the bottom -->
+    <script src="script.js"></script>
+
+</body>
+</html>

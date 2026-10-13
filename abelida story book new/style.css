@@ -1,0 +1,190 @@
+
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+}
+
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+#home {
+    text-align: center;
+    padding: 25px;
+}
+
+#search {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid black;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.book {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+
+.book h3 {
+    font-size: 18px;
+}
+
+.book p {
+    font-size: 14px;
+}
+
+button {
+    background: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+#reader {
+    border: 1px solid black;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Dark mode */
+body.dark {
+    background: black;
+    color: white;
+}
+
+body.dark nav,
+body.dark .book,
+body.dark #reader {
+    background: #222;
+    color: white;
+    border-color: white;
+}
+
+body.dark nav a {
+    color: white;
+}
+
+body.dark h2 {
+    border-color: white;
+}
+
+body.dark button {
+    background: white;
+    color: black;
+}
+
+body.dark button:hover {
+    background: black;
+    color: white;
+}
+
+/* Mobile design */
+@media (max-width: 700px) {
+    .book-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.book img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid black;
+}
+
+
+#storyImage {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+
+@media (max-width: 450px) {
+    #storyImage {
+        height: 220px;
+    }
+
+    .book img {
+        height: 180px;
+    }
+}
+
